@@ -1,0 +1,69 @@
+/* 清除默认样式，初始化样式 */
+
+* {
+    /* 清除内外边距*/
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+ul ,ol{
+    /* 清除默认圆点 */
+    list-style: none;
+}
+a {
+    /* 取消下划线 */
+    text-decoration: none;
+    /* 字体颜色 */
+    color: #FFF;
+}
+a,button{
+    cursor: pointer;
+}
+input,
+button {
+    /*去掉input的轮廓线*/
+    outline: none;
+    border: 0;
+}
+/* 清除默认样式，初始化样式 */
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container .screen{
+    position: relative;
+    margin: 20px auto 0px;
+    width: 90vw;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.container .control-bar{
+    padding: 16px 0 20px;
+    text-align: center;
+}
+.container .control-bar input[type=text] {
+    width: 366px;
+    height: 20px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid #b3b3b3;
+    margin-bottom: 14px;
+}
+.container .control-bar button {
+    cursor: pointer;
+    border-radius: 2px;
+    width: 132px;
+    border: 1px solid #acacac;
+    padding: 6px 0;
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+}
+.container .control-bar button.primary {
+    border-color: #de826f;
+    color: #de826f;
+}
